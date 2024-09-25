@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eef2f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    width: 80vw; /* 80% del ancho de la ventana */
+    height: 80vh; /* 80% de la altura de la ventana */
+    max-width: 600px; /* Opcional: establecer un ancho máximo */
+    max-height: 800px; /* Opcional: establecer un alto máximo */
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.messages {
+    padding: 20px;
+    overflow-y: auto;
+    flex-grow: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+.welcome-message {
+    text-align: center; 
+    margin: 10px 0; 
+    font-size: 18px; 
+    color: #333; 
+}
+
+.message {
+    display: flex;
+    align-items: center; 
+    margin: 5px 0;
+    padding: 10px 15px;
+    border-radius: 15px;
+    white-space: normal; /* Permitir que el texto se ajuste */
+    word-wrap: break-word; /* Romper palabras largas */
+    width: fit-content; /* Ajustar el ancho al contenido */
+    max-width: 75%; /* Máximo 75% del ancho del contenedor */
+}
+
+.message img {
+    width: 30px; 
+    height: 30px;
+    border-radius: 50%; 
+    margin-right: 10px; 
+}
+
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end; /* Mensaje del usuario a la derecha */
+    border-bottom-right-radius: 0;
+    margin-left: auto; /* Asegura que el mensaje se alinee a la derecha */
+}
+
+.received {
+    background-color: #f1f0f0;
+    align-self: flex-start; /* Mensaje del bot a la izquierda */
+    border-bottom-left-radius: 0;
+    margin-right: auto; /* Asegura que el mensaje se alinee a la izquierda */
+}
+
+.input-container {
+    display: flex;
+    border-top: 1px solid #ccc;
+}
+
+.message-input {
+    flex-grow: 1; 
+    border: none;
+    padding: 15px;
+    border-radius: 10px 0 0 10px; 
+    font-size: 16px;
+    outline: none;
+}
+
+.send-button {
+    border: none;
+    background-color: #28a745;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 0 10px 10px 0; 
+    transition: background-color 0.3s;
+}
+
+.send-button:hover {
+    background-color: #218838;
+}

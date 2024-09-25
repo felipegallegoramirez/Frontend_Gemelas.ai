@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './chat.component.css'
 })
 export class ChatComponent {
+  
+
+  
 
 }
